@@ -32,12 +32,29 @@ class MyWindow(QMainWindow):
         self.name.setGeometry(275, 180, 230, 35)
         self.name.setStyleSheet(
             "background-color: #20E4B0;font-size:18px;color:white")
-
+            ########################################
+        self.ptch = QLabel(self)
+        ptch1 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
+        self.ptch.setPixmap(ptch1)
+        self.ptch.setHidden(True)
+        self.ptch.setGeometry(500, 180, 35, 35)
+        self.ptch = QIcon("img/ptich.png")
+        
+            ########################################
         self.email = QLineEdit(self)
         self.email.setPlaceholderText(" Ваш электронный адрес")
         self.email.setGeometry(275, 230, 230, 35)
         self.email.setStyleSheet(
             "background-color: #20E4B0;font-size:18px;color:white")
+            ########################################
+        self.ptch11 = QLabel(self)
+        ptch111 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
+        self.ptch11.setPixmap(ptch111)
+        self.ptch11.setHidden(True)
+        self.ptch11.setGeometry(500, 230, 35, 35)
+        self.ptch11 = QIcon("img/ptich.png")
+        
+            ########################################
 
         self.parol = QLineEdit(self)
         self.parol.setPlaceholderText("        Введите пароль")
@@ -46,11 +63,31 @@ class MyWindow(QMainWindow):
         self.parol.setStyleSheet(
             "background-color: #20E4B0;font-size:18px;color:white")
 
+            ########################################
+        self.ptch12 = QLabel(self)
+        ptch121 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
+        self.ptch12.setPixmap(ptch121)
+        self.ptch12.setHidden(True)
+        self.ptch12.setGeometry(500, 285, 35, 35)
+        self.ptch12 = QIcon("img/ptich.png")
+        
+            ########################################
+
         self.photo = QLineEdit(self)
         self.photo.setPlaceholderText("Введите число с картики")
         self.photo.setGeometry(275, 335, 230, 35)
         self.photo.setStyleSheet(
             "background-color: #20E4B0;font-size:18px;color:white")
+
+            ########################################
+        self.ptch13 = QLabel(self)
+        ptch131 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
+        self.ptch13.setPixmap(ptch131)
+        self.ptch13.setHidden(True)
+        self.ptch13.setGeometry(500, 335, 35, 35)
+        self.ptch13 = QIcon("img/ptich.png")
+        
+            ########################################
 
         self.rasm = QLabel(self)
         rasm1 = QPixmap("img/rasm.png").scaled(QtCore.QSize(60, 60))
@@ -59,7 +96,7 @@ class MyWindow(QMainWindow):
         self.rasm = QIcon("img/rasm.png")
 
         self.parol0 = QCheckBox("Показать пароль", self)
-        self.parol0.setGeometry(520, 285, 120, 40)
+        self.parol0.setGeometry(550, 285, 120, 40)
 
         self.reg = QPushButton("Зарегистрироваться", self)
         self.reg.setGeometry(310, 400, 170, 35)
@@ -85,7 +122,13 @@ class MyWindow(QMainWindow):
 
     def praver_name(self):
         if self.praver_n():
-            pass
+            self.ptch = QLabel(self)
+            ptch1 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
+            self.ptch.setPixmap(ptch1)
+            self.ptch.setHidden(False)
+            self.ptch.setGeometry(500, 180, 35, 35)
+            self.ptch = QIcon("img/ptich.png")
+           
         else:
             QMessageBox.critical(self, "Xatolig", "Ism Noto'g'ri kiritildi")
     ####################################################
@@ -96,7 +139,12 @@ class MyWindow(QMainWindow):
 
     def praver_email(self):
         if self.praver_e():
-            pass
+            self.ptch11 = QLabel(self)
+            ptch111 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
+            self.ptch11.setPixmap(ptch111)
+            self.ptch11.setHidden(False)
+            self.ptch11.setGeometry(500, 230, 35, 35)
+            self.ptch11 = QIcon("img/ptich.png")
         else:
             QMessageBox.critical(self, "Xatolig", "Email Noto'g'ri kiritildi")
     ######################################
@@ -107,7 +155,13 @@ class MyWindow(QMainWindow):
 
     def praver_parol(self):
         if self.praver_p():
-            pass
+            self.ptch12 = QLabel(self)
+            ptch121 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
+            self.ptch12.setPixmap(ptch121)
+            self.ptch12.setHidden(False)
+            self.ptch12.setGeometry(500, 285, 35, 35)
+            self.ptch12 = QIcon("img/ptich.png")
+        
         else:
             QMessageBox.critical(self, "Xatolig", "Parol Noto'g'ri kiritildi")
 
@@ -117,7 +171,12 @@ class MyWindow(QMainWindow):
 
     def p_kar(self):
         if self.kar():
-            pass
+            self.ptch13 = QLabel(self)
+            ptch131 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
+            self.ptch13.setPixmap(ptch131)
+            self.ptch13.setHidden(False)
+            self.ptch13.setGeometry(500, 335, 35, 35)
+            self.ptch13 = QIcon("img/ptich.png")
         else:
             QMessageBox.critical(
                 self, "Xatolig", "Rasmdagi son Noto'g'ri kiritildi")
