@@ -32,29 +32,29 @@ class MyWindow(QMainWindow):
         self.name.setGeometry(275, 180, 230, 35)
         self.name.setStyleSheet(
             "background-color: #20E4B0;font-size:18px;color:white")
-            ########################################
+        ########################################
         self.ptch = QLabel(self)
         ptch1 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
         self.ptch.setPixmap(ptch1)
         self.ptch.setHidden(True)
         self.ptch.setGeometry(500, 180, 35, 35)
         self.ptch = QIcon("img/ptich.png")
-        
-            ########################################
+
+        ########################################
         self.email = QLineEdit(self)
         self.email.setPlaceholderText(" Ваш электронный адрес")
         self.email.setGeometry(275, 230, 230, 35)
         self.email.setStyleSheet(
             "background-color: #20E4B0;font-size:18px;color:white")
-            ########################################
+        ########################################
         self.ptch11 = QLabel(self)
         ptch111 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
         self.ptch11.setPixmap(ptch111)
         self.ptch11.setHidden(True)
         self.ptch11.setGeometry(500, 230, 35, 35)
         self.ptch11 = QIcon("img/ptich.png")
-        
-            ########################################
+
+        ########################################
 
         self.parol = QLineEdit(self)
         self.parol.setPlaceholderText("        Введите пароль")
@@ -63,15 +63,15 @@ class MyWindow(QMainWindow):
         self.parol.setStyleSheet(
             "background-color: #20E4B0;font-size:18px;color:white")
 
-            ########################################
+        ########################################
         self.ptch12 = QLabel(self)
         ptch121 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
         self.ptch12.setPixmap(ptch121)
         self.ptch12.setHidden(True)
         self.ptch12.setGeometry(500, 285, 35, 35)
         self.ptch12 = QIcon("img/ptich.png")
-        
-            ########################################
+
+        ########################################
 
         self.photo = QLineEdit(self)
         self.photo.setPlaceholderText("Введите число с картики")
@@ -79,15 +79,15 @@ class MyWindow(QMainWindow):
         self.photo.setStyleSheet(
             "background-color: #20E4B0;font-size:18px;color:white")
 
-            ########################################
+        ########################################
         self.ptch13 = QLabel(self)
         ptch131 = QPixmap("img/ptich.png").scaled(QtCore.QSize(35, 35))
         self.ptch13.setPixmap(ptch131)
         self.ptch13.setHidden(True)
         self.ptch13.setGeometry(500, 335, 35, 35)
         self.ptch13 = QIcon("img/ptich.png")
-        
-            ########################################
+
+        ########################################
 
         self.rasm = QLabel(self)
         rasm1 = QPixmap("img/rasm.png").scaled(QtCore.QSize(60, 60))
@@ -128,7 +128,7 @@ class MyWindow(QMainWindow):
             self.ptch.setHidden(False)
             self.ptch.setGeometry(500, 180, 35, 35)
             self.ptch = QIcon("img/ptich.png")
-           
+
         else:
             QMessageBox.critical(self, "Xatolig", "Ism Noto'g'ri kiritildi")
     ####################################################
@@ -161,7 +161,7 @@ class MyWindow(QMainWindow):
             self.ptch12.setHidden(False)
             self.ptch12.setGeometry(500, 285, 35, 35)
             self.ptch12 = QIcon("img/ptich.png")
-        
+
         else:
             QMessageBox.critical(self, "Xatolig", "Parol Noto'g'ri kiritildi")
 
